@@ -43,7 +43,13 @@ coverage.xml
  
 # secrets
 **/*.key
+*.json
+!**/.well-known/*.json
+!**/package.json
+!**/tsconfig.json
+*_encoded.txt
 .gitsecret/keys/random_seed
+.idea/
  
 # Random
 .vscode

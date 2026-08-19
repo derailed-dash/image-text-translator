@@ -50,9 +50,7 @@ gcloud projects add-iam-policy-binding $PROJECT_ID \
   --member="serviceAccount:$GH_SVC_ACCOUNT_EMAIL" \
   --role=roles/cloudfunctions.admin
 
-### Create a service account key ###
-gcloud iam service-accounts keys create ~/.config/gcloud/$GH_SVC_ACCOUNT.json \
-  --iam-account=$GH_SVC_ACCOUNT_EMAIL
-
-# Base64 encode the key #
-base64 ~/.config/gcloud/$GH_SVC_ACCOUNT.json > "${GH_SVC_ACCOUNT}_encoded.txt"
+### Authentication Recommendation: Workload Identity Federation (WIF) ###
+# Do NOT create downloadable service account keys.
+# Instead, configure Workload Identity Federation for GitHub Actions:
+# https://cloud.google.com/iam/docs/workload-identity-federation

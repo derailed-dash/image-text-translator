@@ -7,8 +7,9 @@ export REGION=europe-west4
 export SVC_ACCOUNT=image-text-translator-sa
 export SVC_ACCOUNT_EMAIL=$SVC_ACCOUNT@$PROJECT_ID.iam.gserviceaccount.com
 
+# For local development, use Application Default Credentials (ADC):
 # gcloud auth application-default login
-export GOOGLE_APPLICATION_CREDENTIALS=~/.config/gcloud/$SVC_ACCOUNT.json
+# (No static service account key file required)
 
 # Functions
 export FUNCTIONS_PORT=8081
