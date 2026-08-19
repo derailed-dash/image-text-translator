@@ -1,5 +1,9 @@
 # Image Text Extract and Translation
 
+> [!NOTE]
+> **Project Archived & Decommissioned**  
+> This repository is archived and maintained for educational and reference purposes. The live Google Cloud serverless demonstration has been decommissioned.
+
 ![Image-Text-Translator Application](docs/image-text-translator-amalgam.jpg)
 ## Overview
 
